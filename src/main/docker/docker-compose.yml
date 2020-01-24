@@ -1,0 +1,8 @@
+version: '2'
+services:
+  acmecategories-mongodb:
+    image: mongo:4.0.13
+    ports:
+      - '27017:27017'
+    volumes:
+      - './data:/data/db'
