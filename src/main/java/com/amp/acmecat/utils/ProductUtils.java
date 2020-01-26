@@ -12,7 +12,7 @@ public class ProductUtils {
         Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
         for (Map.Entry<String, JsonElement> entry: jsonElement.getAsJsonObject().entrySet()) {
             Product product = new Product(entry.getKey(), entry.getValue().getAsString());
-            productRepository.insert(product);
+            productRepository.save(product);
         }
         return entries;
     }

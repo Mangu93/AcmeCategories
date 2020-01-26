@@ -1,5 +1,6 @@
 package com.amp.acmecat.domain;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Objects;
@@ -7,6 +8,7 @@ import java.util.Objects;
 @Document
 public class Product {
 
+    @Id
     public String product;
     public String category;
 
